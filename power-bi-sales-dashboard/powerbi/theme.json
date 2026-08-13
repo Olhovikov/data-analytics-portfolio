@@ -1,0 +1,47 @@
+{
+  "name": "Danila Portfolio - Cobalt Blue",
+  "dataColors": [
+    "#2F5BEA",
+    "#1D3F9F",
+    "#3E86F5",
+    "#7CB5FF",
+    "#F59E0B",
+    "#D95A5A"
+  ],
+  "firstLevelElements": "#111827",
+  "secondLevelElements": "#667085",
+  "thirdLevelElements": "#E5E7EB",
+  "fourthLevelElements": "#98A2B3",
+  "background": "#FFFFFF",
+  "secondaryBackground": "#F3F5F9",
+  "foreground": "#111827",
+  "tableAccent": "#2F5BEA",
+  "good": "#2F5BEA",
+  "neutral": "#F59E0B",
+  "bad": "#D95A5A",
+  "maximum": "#1D3F9F",
+  "center": "#7CB5FF",
+  "minimum": "#EAF1FF",
+  "textClasses": {
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1D3F9F"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#1D3F9F"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#667085"
+    },
+    "callout": {
+      "fontSize": 28,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#111827"
+    }
+  }
+}

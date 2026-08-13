@@ -13,6 +13,7 @@ This folder contains the data model and measures I prepared for the Power BI ver
 - `powerbi/measures.dax`
 - `powerbi/model.md`
 - `powerbi/build-guide.md`
+- `powerbi/theme.json`
 
 ## Setup
 
@@ -21,7 +22,8 @@ This folder contains the data model and measures I prepared for the Power BI ver
 3. Create the relationships shown in `powerbi/model.md`.
 4. Mark `Dim Date[date]` as the date table.
 5. Add the measures from `powerbi/measures.dax`.
-6. Use `powerbi/build-guide.md` as a page checklist.
+6. Import `powerbi/theme.json` from **View → Themes → Browse for themes**.
+7. Use `powerbi/build-guide.md` as a page checklist.
 
 I use Retail as the default filter and keep Wholesale on a separate page. The warehouse has only a small number of large invoices, so combining the two channels would make the retail average receipt almost meaningless.
 
