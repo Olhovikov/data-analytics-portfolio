@@ -1,4 +1,4 @@
-# Danila Olhovikov — Data Analytics Portfolio
+# Danila Olhovikov - Data Analytics Portfolio
 
 Hi, I’m Danila. I work with sales and inventory reports in retail and built these projects to turn routine monthly exports into information that is easier to use.
 
