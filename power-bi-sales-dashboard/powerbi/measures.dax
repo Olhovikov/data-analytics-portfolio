@@ -1,0 +1,51 @@
+Revenue :=
+SUM ( 'Fact Sales'[gross_revenue] )
+
+Net Revenue :=
+SUM ( 'Fact Sales'[net_revenue] )
+
+Gross Profit :=
+SUM ( 'Fact Sales'[gross_profit] )
+
+Gross Margin % :=
+DIVIDE ( [Gross Profit], [Revenue] )
+
+Units :=
+SUM ( 'Fact Sales'[quantity] )
+
+Transactions :=
+DISTINCTCOUNT ( 'Fact Sales'[transaction_id] )
+
+Average Basket :=
+DIVIDE ( [Revenue], [Transactions] )
+
+Discount Value :=
+SUM ( 'Fact Sales'[discount_amount] )
+
+Discount to Revenue % :=
+DIVIDE ( [Discount Value], [Revenue] )
+
+Positive Revenue :=
+CALCULATE ( [Revenue], 'Fact Sales'[is_return] = FALSE () )
+
+Returned Value :=
+ABS ( CALCULATE ( [Revenue], 'Fact Sales'[is_return] = TRUE () ) )
+
+Return Rate % :=
+DIVIDE ( [Returned Value], [Positive Revenue] )
+
+Revenue Previous Year :=
+CALCULATE ( [Revenue], DATEADD ( 'Dim Date'[date], -1, YEAR ) )
+
+Revenue YoY % :=
+DIVIDE ( [Revenue] - [Revenue Previous Year], [Revenue Previous Year] )
+
+Revenue Share % :=
+DIVIDE ( [Revenue], CALCULATE ( [Revenue], ALLSELECTED ( 'Dim Product' ) ) )
+
+Retail Revenue :=
+CALCULATE ( [Revenue], 'Dim Location'[channel] = "Retail" )
+
+Wholesale Revenue :=
+CALCULATE ( [Revenue], 'Dim Location'[channel] = "Wholesale" )
+
